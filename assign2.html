@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="assign2.css" />
+    <script type="text/javascript" src="assign2.js"></script>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <img src="mos1.png" height="70" id="mosimg">
+            모기퇴치
+        </div>
+    </header>
+    <div id="contents">
+        <canvas id="mycanvas" width="750" height="750"></canvas>
+        <div id="status">
+            다음 색 : <div id="colorPreview"></div><br />
+            라이프 : <canvas id="lifeCanvas" width="200" height="20"></canvas><br />
+            점수 : <span id="score">0</span><br />
+            <div id="notice">아이템 정보가 표시됩니다</div><br/>
+            배경음악 <input id="backSoundSetting" type="checkbox" onclick="settingBackSound()" checked/>
+        </div>
+    </div>
+    <audio id="clickSound">
+        <source src="click.wav" type='audio/mp4'>
+        Your user agent does not support the HTML5 Audio element.
+    </audio>
+    <audio id="mainBackSound" autoplay>
+        <source src="mainBackSound.mp3" type='audio/mp4'>
+        Your user agent does not support the HTML5 Audio element.
+    </audio>
+    <footer>
+        <p>Project Assignment 2</p>
+        <p>Created by Giho Kang, Sanggyu Han</p>
+        <p>배경 음악이 재생되지 않을시 새로고침을 눌러주세요</p>
+    </footer>
+
+</body>
+</html>
